@@ -1,0 +1,3468 @@
+[
+    {
+        "id": "e6ad7dddf4e40180",
+        "type": "tab",
+        "label": "Navigation",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1d5ca76ac2e4a103",
+        "type": "tab",
+        "label": "Create TCP/IP Port",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "46d219a757227567",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.100.246",
+        "port": "1883",
+        "clientid": "123",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "59ad44792fd71084",
+        "type": "ui_tab",
+        "name": "IO Checking",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a6286b37c1c3cdf6",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "edd94fdf33f70a1a",
+        "type": "ui_group",
+        "name": "IR Sensor - Present",
+        "tab": "59ad44792fd71084",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "73b771ea559ec37c",
+        "type": "ui_group",
+        "name": "IR Sensor - Rack",
+        "tab": "59ad44792fd71084",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a72a8152f8a0971c",
+        "type": "ui_group",
+        "name": "Conveyor Sensor & Control",
+        "tab": "59ad44792fd71084",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ba6e91e75b98c462",
+        "type": "ui_group",
+        "name": "Robot Control",
+        "tab": "59ad44792fd71084",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0c84e8802a21edfa",
+        "type": "gauth",
+        "name": "node-red-992@digitaltwin-436412.iam.gserviceaccount.com"
+    },
+    {
+        "id": "f1190d07996b0715",
+        "type": "ui_tab",
+        "name": "6 DOF Control",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a6cf5ef55f1c519c",
+        "type": "blynk-iot-client",
+        "name": "",
+        "path": "blynk.cloud",
+        "key": "2DuXwPORB_fQ9jJgdVXzr7xtM-fJ93ZT",
+        "tmpl": "TMPL6ipv0Amgc",
+        "dbg_all": false,
+        "dbg_log": false,
+        "dbg_prop": false,
+        "dbg_sync": false,
+        "dbg_low": false,
+        "dbg_pins": "",
+        "multi_cmd": false,
+        "enabled": true
+    },
+    {
+        "id": "8edb99de8f78c4c5",
+        "type": "ui_tab",
+        "name": "Servo Motor Control",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "266fbbba73e2a57d",
+        "type": "MySQLdatabase",
+        "name": "Supermarket Assistant Robot",
+        "host": "localhost",
+        "port": "3306",
+        "db": "supermarketrobot",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "6a06d80b9909fb74",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f461041801bf2a0d",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "6a06d80b9909fb74",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27e8e5f93f774e06",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "6a06d80b9909fb74",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "c433799af74e287a",
+        "type": "ui_tab",
+        "name": "Chart",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d2c17ede2df0251d",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "c433799af74e287a",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "73d8bfe6a64072b1",
+        "type": "ui_group",
+        "name": "Notification",
+        "tab": "c433799af74e287a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3ffb833323ae0d22",
+        "type": "modbus-client",
+        "name": "FACTORYIO",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": " 192.168.1.164",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "971593d1683fb237",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "training",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "b37ce91b2b238488",
+        "type": "ui_tab",
+        "name": "MySQL Database",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8a4aec6f4fad9e16",
+        "type": "ui_group",
+        "name": "Add Information",
+        "tab": "b37ce91b2b238488",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "60050b225f364af7",
+        "type": "ui_group",
+        "name": "View information",
+        "tab": "b37ce91b2b238488",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0905d85bf82b0a0f",
+        "type": "ui_group",
+        "name": "Update information",
+        "tab": "b37ce91b2b238488",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "21233af589e95b91",
+        "type": "tls-config",
+        "name": "TLS_HiveMQ",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "1b2e044d11bb439b",
+        "type": "FINS Connection",
+        "name": "",
+        "host": "0.0.0.0",
+        "port": "9600",
+        "MODE": "",
+        "MODEType": "CS",
+        "protocol": "",
+        "protocolType": "tcp",
+        "ICF": "128",
+        "DNA": "",
+        "DA1": "",
+        "DA2": "",
+        "SNA": "",
+        "SA1": "",
+        "SA2": "",
+        "autoConnect": true
+    },
+    {
+        "id": "ccad4caef22184de",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM3",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "0a892df967f0fed0",
+        "type": "ui_group",
+        "name": "6 DOF Joint Control",
+        "tab": "f1190d07996b0715",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85c60371ce7fea4b",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "f1190d07996b0715",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f190aec788beade1",
+        "type": "ui_group",
+        "name": "Position Control",
+        "tab": "8edb99de8f78c4c5",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "31688e625c4f3849",
+        "type": "ui_group",
+        "name": "Input",
+        "tab": "6a06d80b9909fb74",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "49093550dc84aaa1",
+        "type": "mqtt-broker",
+        "name": "Cloud Hivemq Broker  ",
+        "broker": "178bb5ab32b2442eaa765b6fcba48e4c.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "21233af589e95b91",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f37b6dd861cb2e77",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "6533b9af5ab973cd"
+            ]
+        ]
+    },
+    {
+        "id": "8f568dddcac13ab4",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Navigation On/Off",
+        "func": "msg.topic = \"SELECT * FROM supermarketrobot.navigation;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "f37b6dd861cb2e77"
+            ]
+        ]
+    },
+    {
+        "id": "e8da3c903a5dd2a0",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "8f568dddcac13ab4"
+            ]
+        ]
+    },
+    {
+        "id": "6533b9af5ab973cd",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Read Action",
+        "func": "//Set Global Variable\nglobal.set('NvAction', msg.payload[0].action);\nglobal.set('NvCoordinate', msg.payload[0].coordinate);\n\n//Retrieving the data\nvar check = global.get('NvAction') ||0;\nmsg.payload =check;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 140,
+        "wires": [
+            [
+                "86a0de2a168a5e39"
+            ]
+        ]
+    },
+    {
+        "id": "86a0de2a168a5e39",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Send TCP/IP",
+        "func": "var msg1 = global.get('NvAction') || 0;\nvar msg2 = global.get('NvCoordinate') || '(0,0,00)0';\n\nvar NvArray = (msg1.toString()) + msg2;\n\n//var action = {payload: msg1};\n//var coordinate = {payload: msg2};\n\nmsg.payload = NvArray;\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 140,
+        "wires": [
+            [
+                "e11a2fa38c7b72f7",
+                "0fde879db073b594"
+            ]
+        ]
+    },
+    {
+        "id": "a46cc94312e2515f",
+        "type": "comment",
+        "z": "e6ad7dddf4e40180",
+        "name": "For Navigation Feature",
+        "info": "",
+        "x": 300,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0fde879db073b594",
+        "type": "tcp out",
+        "z": "e6ad7dddf4e40180",
+        "name": "Send Action & Coor",
+        "host": "localhost",
+        "port": "2000",
+        "beserver": "server",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 1250,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7a82a62816dc38b6",
+        "type": "tcp in",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check Action & Coor",
+        "server": "client",
+        "host": "localhost",
+        "port": "2000",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 1090,
+        "y": 200,
+        "wires": [
+            [
+                "54fd6317cdf916d9"
+            ]
+        ]
+    },
+    {
+        "id": "54fd6317cdf916d9",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 93",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e11a2fa38c7b72f7",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 94",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d0ee999fd52f97a5",
+        "type": "rbe",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 890,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39ee7094ca293ea6",
+        "type": "comment",
+        "z": "e6ad7dddf4e40180",
+        "name": "RFID Detection For Item Info",
+        "info": "",
+        "x": 540,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f179513003ca7b64",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 80,
+        "y": 380,
+        "wires": [
+            [
+                "6cab1859bef6b1c4"
+            ]
+        ]
+    },
+    {
+        "id": "6cab1859bef6b1c4",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check RFID Read Enable",
+        "func": "var check = global.get('RFIDRead') ||0;\n\nmsg.payload = msg.payload;\n\nif(check === 1) {\n    return msg;\n}\nelse {\n    \n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "b41fb5e25354dedd",
+                "730d06a6a2741f23"
+            ]
+        ]
+    },
+    {
+        "id": "5d96119d6f34292b",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 830,
+        "y": 400,
+        "wires": [
+            [
+                "6714da7bf57f9551",
+                "1d2ffdebf161398b"
+            ]
+        ]
+    },
+    {
+        "id": "6714da7bf57f9551",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 95",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1d2ffdebf161398b",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Item Info",
+        "func": "var id = msg.payload[0].ID;\nvar name = msg.payload[0].Name;\nvar price = msg.payload[0].Price;\nvar offer = msg.payload[0].PromoCode;\nvar description = msg.payload[0].Description;\nvar location = msg.payload[0].Location;\n\nmsg.topic = 'UPDATE`supermarketrobot`.`rfidcheck` SET `ItemID` = ' + id + ', `ItemName` = \"' + name + '\", `ItemPrice` = ' + price + ', `ItemOffer` = \"' + offer + '\", `ItemInfo` = \"' + description + '\",`ItemLocation` = \"' + location + '\" WHERE`RFID` = 0;';\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 400,
+        "wires": [
+            [
+                "c9266c744ebe7ead",
+                "9785f7addc6ac8a1"
+            ]
+        ]
+    },
+    {
+        "id": "c9266c744ebe7ead",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1310,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9785f7addc6ac8a1",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 97",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "228f3190c9baa346",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2",
+        "payloadType": "num",
+        "x": 80,
+        "y": 440,
+        "wires": [
+            [
+                "6cab1859bef6b1c4"
+            ]
+        ]
+    },
+    {
+        "id": "ba597fde7a6476a2",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3",
+        "payloadType": "num",
+        "x": 80,
+        "y": 480,
+        "wires": [
+            [
+                "6cab1859bef6b1c4"
+            ]
+        ]
+    },
+    {
+        "id": "c88e777ca3332c7e",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 4",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "4",
+        "payloadType": "num",
+        "x": 80,
+        "y": 520,
+        "wires": [
+            [
+                "6cab1859bef6b1c4"
+            ]
+        ]
+    },
+    {
+        "id": "127f0d46d296f79e",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 5",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 80,
+        "y": 560,
+        "wires": [
+            [
+                "6cab1859bef6b1c4"
+            ]
+        ]
+    },
+    {
+        "id": "79378030ac1fd820",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 6",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "6",
+        "payloadType": "num",
+        "x": 80,
+        "y": 600,
+        "wires": [
+            [
+                "6cab1859bef6b1c4"
+            ]
+        ]
+    },
+    {
+        "id": "4c17eb58082fa9c3",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 7",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "7",
+        "payloadType": "num",
+        "x": 80,
+        "y": 640,
+        "wires": [
+            [
+                "6cab1859bef6b1c4"
+            ]
+        ]
+    },
+    {
+        "id": "39ebbad25cdbfca4",
+        "type": "comment",
+        "z": "e6ad7dddf4e40180",
+        "name": "RFID Detection For Payment",
+        "info": "",
+        "x": 420,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "202c42a3997a81e4",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check RFID Payment Enable",
+        "func": "var check = global.get('RFIDPayment') ||0;\n\nmsg.payload = msg.payload;\n\nif(check === 1) {\n    return msg;\n}\nelse {\n    \n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 840,
+        "wires": [
+            [
+                "f3c87925e439c4ea",
+                "5d5ab2b842ecab8b"
+            ]
+        ]
+    },
+    {
+        "id": "94198a164e098683",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1050,
+        "y": 840,
+        "wires": [
+            [
+                "256b2c9d9be92c5d"
+            ]
+        ]
+    },
+    {
+        "id": "256b2c9d9be92c5d",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Insert Item Info",
+        "func": "var name = msg.payload[0].Name;\nvar price = msg.payload[0].Price;\n\nmsg.topic = 'INSERT INTO`supermarketrobot`.`holdlistofitem`(`ItemName`, `Price`) VALUES(\"' + name + '\", ' + price + ');';\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 840,
+        "wires": [
+            [
+                "3b30dd246b2148f0"
+            ]
+        ]
+    },
+    {
+        "id": "3b30dd246b2148f0",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1580,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ed4888b130bdc2e",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 80,
+        "y": 840,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "61d04c9421a15ab9",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2",
+        "payloadType": "num",
+        "x": 80,
+        "y": 880,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "6d35aeebd8ce8bbc",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3",
+        "payloadType": "num",
+        "x": 80,
+        "y": 920,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "4eb23369f915f223",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 4",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "4",
+        "payloadType": "num",
+        "x": 80,
+        "y": 960,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "d30f5b858c913884",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 5",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 80,
+        "y": 1000,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "34190f3674de1cc0",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 6",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "6",
+        "payloadType": "num",
+        "x": 80,
+        "y": 1040,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "2bfd6503ac789d89",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 7",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "7",
+        "payloadType": "num",
+        "x": 80,
+        "y": 1080,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "d8f3ac4ee605e087",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 8",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "8",
+        "payloadType": "num",
+        "x": 80,
+        "y": 1120,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "92454c3f0095192b",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 9",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "9",
+        "payloadType": "num",
+        "x": 80,
+        "y": 1160,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "8fd6d1ffa8f871e5",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 10",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 80,
+        "y": 1200,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "1d7cb08af0e2b614",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 11",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "11",
+        "payloadType": "num",
+        "x": 80,
+        "y": 1240,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "24a09b87baeb6221",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Item ID 12",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "12",
+        "payloadType": "num",
+        "x": 80,
+        "y": 1280,
+        "wires": [
+            [
+                "202c42a3997a81e4"
+            ]
+        ]
+    },
+    {
+        "id": "f58c86b42ae36ebd",
+        "type": "e-mail",
+        "z": "e6ad7dddf4e40180",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Send Payment detail",
+        "x": 1320,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "8565e865158ea48d",
+        "type": "comment",
+        "z": "e6ad7dddf4e40180",
+        "name": "Email Notification for calling help",
+        "info": "",
+        "x": 390,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "0fd5a3865707156f",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 630,
+        "y": 2440,
+        "wires": [
+            [
+                "0d9e48c3125b5a72",
+                "e54f9b216c0acfd4"
+            ]
+        ]
+    },
+    {
+        "id": "fd613aa166d8a8cc",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check Help Info",
+        "func": "msg.topic = \"SELECT * FROM supermarketrobot.callstaff;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 2440,
+        "wires": [
+            [
+                "0fd5a3865707156f"
+            ]
+        ]
+    },
+    {
+        "id": "1f49aac44eb9e0ce",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Trigger Help",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 2440,
+        "wires": [
+            [
+                "fd613aa166d8a8cc"
+            ]
+        ]
+    },
+    {
+        "id": "a45d91759a5cfd22",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Send email to staff",
+        "func": "var problem = global.get('EProblem') ||0;\nvar location = global.get('ELocation') || 0;\n\nmsg.topic = 'Customer Assistance Needed';\nmsg.payload = \"Problem encountered by customer: \" +problem+ \".\\nPlease come to \" + location + \" immediately to assist the customer.\";\nmsg.to = 'robomarketinnovators@gmail.com';\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 2440,
+        "wires": [
+            [
+                "d29b9368a344db5a",
+                "7dbac1cd19e192d5"
+            ]
+        ]
+    },
+    {
+        "id": "0d9e48c3125b5a72",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 98",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "d29b9368a344db5a",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Reset Help Action",
+        "func": "msg.topic = \"UPDATE`supermarketrobot`.`callstaff` SET `SendAction` = 0 WHERE `RobotID` = 1;\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 2560,
+        "wires": [
+            [
+                "17e6a8e1cc28129a"
+            ]
+        ]
+    },
+    {
+        "id": "17e6a8e1cc28129a",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 910,
+        "y": 2560,
+        "wires": [
+            [
+                "436f37afabc7e814"
+            ]
+        ]
+    },
+    {
+        "id": "e54f9b216c0acfd4",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Read Send Action",
+        "func": "//Set Global Variable\nglobal.set('EProblem', msg.payload[0].Problem);\nglobal.set('ELocation', msg.payload[0].Location);\nglobal.set('EAction', msg.payload[0].SendAction);\n\n//Retrieving the data\nvar check = global.get('EAction') ||0;\nmsg.payload =check;\n\nif (check === 1) {\n    return msg;\n} else {\n\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 2440,
+        "wires": [
+            [
+                "a45d91759a5cfd22"
+            ]
+        ]
+    },
+    {
+        "id": "7dbac1cd19e192d5",
+        "type": "e-mail",
+        "z": "e6ad7dddf4e40180",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Send Help",
+        "x": 1330,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "436f37afabc7e814",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 99",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "fbcf28c4aa36a3a8",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 630,
+        "y": 1360,
+        "wires": [
+            [
+                "2da4374581864fd5",
+                "8d9129e950a632b6"
+            ]
+        ]
+    },
+    {
+        "id": "65edb29d47782595",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check Payment Info",
+        "func": "//msg.topic = \"SELECT * FROM supermarketrobot.paymenthistory WHERE `Sendaction` = 1;\";\nmsg.topic = \"SELECT * FROM supermarketrobot.paymenthistory ORDER BY `Sendaction` = 1 DESC;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1360,
+        "wires": [
+            [
+                "fbcf28c4aa36a3a8"
+            ]
+        ]
+    },
+    {
+        "id": "ed92888499ba0e86",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Trigger Payment",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 1360,
+        "wires": [
+            [
+                "65edb29d47782595",
+                "28d68c08d380a2a5"
+            ]
+        ]
+    },
+    {
+        "id": "2da4374581864fd5",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Read Send Action",
+        "func": "//Set Global Variable\nglobal.set('EPaymentID', msg.payload[0].PaymentID);\nglobal.set('EToothpaste', msg.payload[0].Toothpaste);\nglobal.set('EShampoo', msg.payload[0].Shampoo);\nglobal.set('ESoap', msg.payload[0].Soap);\nglobal.set('EToiletpaper', msg.payload[0]['Toilet paper']);\nglobal.set('ELaundrydetergent', msg.payload[0]['Laundry detergent']);\nglobal.set('EDishwashingliquid', msg.payload[0]['Dishwashing liquid']);\nglobal.set('EFacialtissues', msg.payload[0]['Facial tissues']);\nglobal.set('ETrashbags', msg.payload[0]['Trash bags']);\nglobal.set('EAluminumfoil', msg.payload[0]['Aluminum foil']);\nglobal.set('EPlasticwrap', msg.payload[0]['Plastic wrap']);\nglobal.set('ECleaningspray', msg.payload[0]['Cleaning spray']);\nglobal.set('EHandsanitizer', msg.payload[0]['Hand sanitizer']);\nglobal.set('ETotalprice', msg.payload[0]['Total price']);\nglobal.set('Usermail', msg.payload[0].Useremail);\nglobal.set('Eaction', msg.payload[0].Sendaction);\n\n//Retrieving the data\nvar check = global.get('Eaction') ||0;\nvar paymenttostring = global.get('EPaymentID') ||0;\nmsg.payload = check;\n\nif (check === 1) {\n    msg.qrcodeinput = String(paymenttostring);\n    return msg;\n} else {\n\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1340,
+        "wires": [
+            [
+                "34f56d2afd985c38"
+            ]
+        ]
+    },
+    {
+        "id": "8d9129e950a632b6",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 101",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "28d68c08d380a2a5",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check Item Price",
+        "func": "msg.topic = \"SELECT * FROM supermarketrobot.itemtype; \";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1300,
+        "wires": [
+            [
+                "23456e2c90e863bf"
+            ]
+        ]
+    },
+    {
+        "id": "23456e2c90e863bf",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 650,
+        "y": 1300,
+        "wires": [
+            [
+                "8c6e04f486a9e060"
+            ]
+        ]
+    },
+    {
+        "id": "8c6e04f486a9e060",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Obtain Item Price",
+        "func": "//Set Global Variable\nglobal.set('EToothpaste_Price', msg.payload[0].Price);\nglobal.set('EShampoo_Price', msg.payload[1].Price);\nglobal.set('ESoap_Price', msg.payload[2].Price);\nglobal.set('EToiletpaper_Price', msg.payload[3].Price);\nglobal.set('ELaundrydetergent_Price', msg.payload[4].Price);\nglobal.set('EDishwashingliquid_Price', msg.payload[5].Price);\nglobal.set('EFacialtissues_Price', msg.payload[6].Price);\nglobal.set('ETrashbags_Price', msg.payload[7].Price);\nglobal.set('EAluminumfoil_Price', msg.payload[8].Price);\nglobal.set('EPlasticwrap_Price', msg.payload[9].Price);\nglobal.set('ECleaningspray_Price', msg.payload[10].Price);\nglobal.set('EHandsanitizer_Price', msg.payload[11].Price);\n\nglobal.set('SD_Toothpaste_Qty', msg.payload[0].Quantityleft);\nglobal.set('SD_Shampoo_Qty', msg.payload[1].Quantityleft);\nglobal.set('SD_Soap_Qty', msg.payload[2].Quantityleft);\nglobal.set('SD_Toiletpaper_Qty', msg.payload[3].Quantityleft);\nglobal.set('SD_Laundrydetergent_Qty', msg.payload[4].Quantityleft);\nglobal.set('SD_Dishwashingliquid_Qty', msg.payload[5].Quantityleft);\nglobal.set('SD_Facialtissues_Qty', msg.payload[6].Quantityleft);\nglobal.set('SD_Trashbags_Qty', msg.payload[7].Quantityleft);\nglobal.set('SD_Aluminumfoil_Qty', msg.payload[8].Quantityleft);\nglobal.set('SD_Plasticwrap_Qty', msg.payload[9].Quantityleft);\nglobal.set('SD_Cleaningspray_Qty', msg.payload[10].Quantityleft);\nglobal.set('SD_Handsanitizer_Qty', msg.payload[11].Quantityleft);\n\nvar check = global.get('EToothpaste_Price') ||0;\nmsg.payload =check;\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c0a1972adc0c77e",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Send email to user",
+        "func": "//Get Global Variable\nvar toothpaste_qty = global.get('EToothpaste')||0;\nvar toothpaste_price = global.get('EToothpaste_Price') || 0;\nvar shampoo_qty = global.get('EShampoo')||0;\nvar shampoo_price = global.get('EShampoo_Price') || 0;\nvar soap_qty = global.get('ESoap')||0;\nvar soap_price = global.get('ESoap_Price') || 0;\nvar toiletpaper_qty = global.get('EToiletpaper')||0;\nvar toiletpaper_price = global.get('EToiletpaper_Price') || 0;\nvar laundrydetergent_qty = global.get('ELaundrydetergent')||0;\nvar laundrydetergent_price = global.get('ELaundrydetergent_Price') || 0;\nvar dishwashingliquid_qty = global.get('EDishwashingliquid')||0;\nvar dishwashingliquid_price = global.get('EDishwashingliquid_Price') || 0;\nvar facialtissues_qty = global.get('EFacialtissues')||0;\nvar facialtissues_price = global.get('EFacialtissues_Price') || 0;\nvar trashbags_qty = global.get('ETrashbags')||0;\nvar trashbags_price = global.get('ETrashbags_Price') || 0;\nvar aluminumfoil_qty = global.get('EAluminumfoil')||0;\nvar aluminumfoil_price = global.get('EAluminumfoil_Price') || 0;\nvar plasticwrap_qty = global.get('EPlasticwrap')||0;\nvar plasticwrap_price = global.get('EPlasticwrap_Price') || 0;\nvar cleaningspray_qty = global.get('ECleaningspray')||0;\nvar cleaningspray_price = global.get('ECleaningspray_Price') || 0;\nvar handsanitizer_qty = global.get('EHandsanitizer')||0;\nvar handsanitizer_price = global.get('EHandsanitizer_Price') || 0;\nvar total_price = global.get('ETotalprice') || 0;\nvar user_email = global.get('Usermail') || 0;\n\nvar list = '';\n\nif (toothpaste_qty > 0) {\n    list = list + \"\\n\" + toothpaste_qty + \"x Toothpaste: \" + toothpaste_qty * toothpaste_price;\n}\nif (shampoo_qty > 0) {\n    list = list + \"\\n\" + shampoo_qty + \"x Shampoo: \" + shampoo_qty * shampoo_price;\n}\nif (soap_qty > 0) {\n    list = list + \"\\n\" + soap_qty + \"x Soap: \" + soap_qty * soap_price;\n}\nif (toiletpaper_qty > 0) {\n    list = list + \"\\n\" + toiletpaper_qty + \"x Toilet Paper: \" + toiletpaper_qty * toiletpaper_price;\n}\nif (laundrydetergent_qty > 0) {\n    list = list + \"\\n\" + laundrydetergent_qty + \"x Laundry Detergent: \" + laundrydetergent_qty * laundrydetergent_price;\n}\nif (dishwashingliquid_qty > 0) {\n    list = list + \"\\n\" + dishwashingliquid_qty + \"x Dishwashing Liquid: \" + dishwashingliquid_qty * dishwashingliquid_price;\n}\nif (facialtissues_qty > 0) {\n    list = list + \"\\n\" + facialtissues_qty + \"x Facial Tissues: \" + facialtissues_qty * facialtissues_price;\n}\nif (trashbags_qty > 0) {\n    list = list + \"\\n\" + trashbags_qty + \"x Trash Bags: \" + trashbags_qty * trashbags_price;\n}\nif (aluminumfoil_qty > 0) {\n    list = list + \"\\n\" + aluminumfoil_qty + \"x Aluminum Foil: \" + aluminumfoil_qty * aluminumfoil_price;\n}\nif (plasticwrap_qty > 0) {\n    list = list + \"\\n\" + plasticwrap_qty + \"x Plastic Wrap: \" + plasticwrap_qty * plasticwrap_price;\n}\nif (cleaningspray_qty > 0) {\n    list = list + \"\\n\" + cleaningspray_qty + \"x Cleaning Spray: \" + cleaningspray_qty * cleaningspray_price;\n}\nif (handsanitizer_qty > 0) {\n    list = list + \"\\n\" + handsanitizer_qty + \"x Hand Sanitizer: \" + handsanitizer_qty * handsanitizer_price;\n}\n\nvar QR_code = msg.payload;\nmsg.topic = 'Payment Information from RoboMarket Innovators';\nmsg.payload = \"Dear Valued Customer,\\n\\nThanks for coming, below is the list of your purchased items. Please use the attacted QR code for paylater at the counter.\\n\" + list + \"\\n\\nTotal Price: RM\" + total_price;\nmsg.to = user_email;\nmsg.attachments = { filename: \"PaymentID.png\", content: QR_code };\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1400,
+        "wires": [
+            [
+                "f58c86b42ae36ebd",
+                "d299701038897de7"
+            ]
+        ]
+    },
+    {
+        "id": "ac2dd06aaba59956",
+        "type": "e-mail",
+        "z": "e6ad7dddf4e40180",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Send Email for for Replenishment",
+        "x": 1320,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "34f56d2afd985c38",
+        "type": "qrcode-generator",
+        "z": "e6ad7dddf4e40180",
+        "name": "Paylater QR Code",
+        "qrtype": "text2qr",
+        "text2qrText": "",
+        "ssid": "",
+        "hiddenssid": false,
+        "wifitype": "",
+        "phonenum": "",
+        "smsphonenum": "",
+        "smstext": "",
+        "mailto": "",
+        "mailsubject": "",
+        "mailbody": "",
+        "latitude": "",
+        "longitude": "",
+        "colorlight": "#ffffff",
+        "colordark": "#000000",
+        "printstatus": false,
+        "x": 1110,
+        "y": 1340,
+        "wires": [
+            [
+                "b4b70b60911aceeb"
+            ]
+        ]
+    },
+    {
+        "id": "b4b70b60911aceeb",
+        "type": "jimp-image",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "ret": "buf",
+        "parameter1": "QR code",
+        "parameter1Type": "msg",
+        "parameter2": "",
+        "parameter2Type": "msg",
+        "parameter3": "",
+        "parameter3Type": "msg",
+        "parameter4": "",
+        "parameter4Type": "msg",
+        "parameter5": "",
+        "parameter5Type": "msg",
+        "parameter6": "",
+        "parameter6Type": "msg",
+        "parameter7": "",
+        "parameter7Type": "msg",
+        "parameter8": "",
+        "parameter8Type": "msg",
+        "sendProperty": "payload",
+        "sendPropertyType": "msg",
+        "parameterCount": 0,
+        "jimpFunction": "none",
+        "selectedJimpFunction": {
+            "name": "none",
+            "fn": "none",
+            "description": "Just loads the image.",
+            "parameters": []
+        },
+        "x": 1330,
+        "y": 1340,
+        "wires": [
+            [
+                "6c0a1972adc0c77e"
+            ]
+        ]
+    },
+    {
+        "id": "d299701038897de7",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Reset Send Action",
+        "func": "var id = global.get('EPaymentID') ||0;\n\nmsg.topic = 'UPDATE `supermarketrobot`.`paymenthistory` SET `Sendaction` = 0 WHERE `PaymentID` = ' + id + ';';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1480,
+        "wires": [
+            [
+                "58e070f2d899ed8b",
+                "50c821d0645c0575",
+                "e0942d968399b8bc",
+                "36281104271657f4",
+                "4b3b973688b96371",
+                "a957231964062901",
+                "e4deaa9700aa7c5d",
+                "6c5e2e1c3c550c4a",
+                "b61021e5210ec055",
+                "35d1aedd4d4f8d86",
+                "7445b9246c0c2487",
+                "1bf3f086988f667b",
+                "d0df2b09dc3c3dcf"
+            ]
+        ]
+    },
+    {
+        "id": "58e070f2d899ed8b",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 990,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50c821d0645c0575",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Toothpast Quantity",
+        "func": "var toothpaste_qty = global.get('EToothpaste')||0;\nvar beforetoothpaste_qty = global.get('SD_Toothpaste_Qty') || 0;\nvar toothpaste_leftqty;\n\n\nif (beforetoothpaste_qty < toothpaste_qty) {\n    toothpaste_leftqty = 0;\n}\nelse {\n    toothpaste_leftqty = beforetoothpaste_qty - toothpaste_qty;\n}\n\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + toothpaste_leftqty +' WHERE `ID` = 1;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1560,
+        "wires": [
+            [
+                "87d41c27869f4d21"
+            ]
+        ]
+    },
+    {
+        "id": "87d41c27869f4d21",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0942d968399b8bc",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Shampoo Quantity",
+        "func": "var shampoo_qty = global.get('EShampoo')||0;\nvar beforeshampoo_qty = global.get('SD_Shampoo_Qty') || 0;\nvar shampoo_leftqty;\n\nif (beforeshampoo_qty < shampoo_qty) {\n    shampoo_leftqty = 0;\n}\nelse {\n    shampoo_leftqty = beforeshampoo_qty - shampoo_qty;\n}\n\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + shampoo_leftqty +' WHERE `ID` = 2;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1600,
+        "wires": [
+            [
+                "f1b721a2d0f4db9d"
+            ]
+        ]
+    },
+    {
+        "id": "f1b721a2d0f4db9d",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36281104271657f4",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Soap Quantity",
+        "func": "var soap_qty = global.get('ESoap')||0;\nvar beforesoap_qty = global.get('SD_Soap_Qty') || 0;\nvar soap_leftqty;\n\nif (beforesoap_qty < soap_qty) {\n    soap_leftqty = 0;\n}\nelse {\n    soap_leftqty = beforesoap_qty - soap_qty;\n}\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + soap_leftqty +' WHERE `ID` = 3;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 1640,
+        "wires": [
+            [
+                "5969fb48d167f8c6"
+            ]
+        ]
+    },
+    {
+        "id": "5969fb48d167f8c6",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b3b973688b96371",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Toilet PaperQuantity",
+        "func": "var toiletpaper_qty = global.get('EToiletpaper')||0;\nvar beforetoiletpaper_qty = global.get('SD_Toiletpaper_Qty') || 0;\nvar toiletpaper_leftqty;\n\nif (beforetoiletpaper_qty < toiletpaper_qty) {\n    toiletpaper_leftqty = 0;\n}\nelse {\n    toiletpaper_leftqty = beforetoiletpaper_qty - toiletpaper_qty;\n}\n\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + toiletpaper_leftqty +' WHERE `ID` = 4;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1680,
+        "wires": [
+            [
+                "57c8f9fa17c21d37"
+            ]
+        ]
+    },
+    {
+        "id": "57c8f9fa17c21d37",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a957231964062901",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Laundry Detergent Quantity",
+        "func": "var laundrydetergent_qty = global.get('ELaundrydetergent')||0;\nvar beforelaundrydetergent_qty = global.get('SD_Laundrydetergent_Qty') || 0;\nvar laundrydetergent_leftqty;\n\nif (beforelaundrydetergent_qty < laundrydetergent_qty) {\n    laundrydetergent_leftqty = 0;\n}\nelse {\n    laundrydetergent_leftqty = beforelaundrydetergent_qty - laundrydetergent_qty;\n}\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + laundrydetergent_leftqty +' WHERE `ID` = 5;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1720,
+        "wires": [
+            [
+                "9a3cdabe66f1efe7"
+            ]
+        ]
+    },
+    {
+        "id": "9a3cdabe66f1efe7",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4deaa9700aa7c5d",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Dishwashing Liquid Quantity",
+        "func": "var dishwashingliquid_qty = global.get('EDishwashingliquid')||0;\nvar beforedishwashingliquid_qty = global.get('SD_Dishwashingliquid_Qty') || 0;\nvar dishwashingliquid_leftqty;\n\nif (beforedishwashingliquid_qty < dishwashingliquid_qty) {\n    dishwashingliquid_leftqty = 0;\n}\nelse {\n    dishwashingliquid_leftqty = beforedishwashingliquid_qty - dishwashingliquid_qty;\n}\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + dishwashingliquid_leftqty +' WHERE `ID` = 6;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1760,
+        "wires": [
+            [
+                "b290be5c6544bff8"
+            ]
+        ]
+    },
+    {
+        "id": "b290be5c6544bff8",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1290,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c5e2e1c3c550c4a",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Facial Tissue Quantity",
+        "func": "var facialtissues_qty = global.get('EFacialtissues')||0;\nvar beforefacialtissues_qty = global.get('SD_Facialtissues_Qty') || 0;\nvar facialtissues_leftqty; \n\nif (beforefacialtissues_qty < facialtissues_qty) {\n    facialtissues_leftqty = 0;\n}\nelse {\n    facialtissues_leftqty = beforefacialtissues_qty - facialtissues_qty;\n}\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + facialtissues_leftqty +' WHERE `ID` = 7;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1800,
+        "wires": [
+            [
+                "6665b538992d246a"
+            ]
+        ]
+    },
+    {
+        "id": "6665b538992d246a",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b61021e5210ec055",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Trash Bags Quantity",
+        "func": "var trashbags_qty = global.get('ETrashbags')||0;\nvar beforetrashbags_qty = global.get('SD_Trashbags_Qty') || 0;\nvar trashbags_leftqty; \n\nif (beforetrashbags_qty < trashbags_qty) {\n    trashbags_leftqty = 0;\n}\nelse {\n    trashbags_leftqty = beforetrashbags_qty - trashbags_qty;\n}\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + trashbags_leftqty +' WHERE `ID` = 8;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1840,
+        "wires": [
+            [
+                "c95239c061e387e9"
+            ]
+        ]
+    },
+    {
+        "id": "c95239c061e387e9",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35d1aedd4d4f8d86",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Aluminum Foil Quantity",
+        "func": "var aluminumfoil_qty = global.get('EAluminumfoil')||0;\nvar beforealuminumfoil_qty = global.get('SD_Aluminumfoil_Qty') || 0;\nvar aluminumfoil_leftqty;\n\nif (beforealuminumfoil_qty < aluminumfoil_qty) {\n    aluminumfoil_leftqty = 0;\n}\nelse {\n    aluminumfoil_leftqty = beforealuminumfoil_qty - aluminumfoil_qty;\n}\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + aluminumfoil_leftqty +' WHERE `ID` = 9;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1880,
+        "wires": [
+            [
+                "d5df91cb46e115a2"
+            ]
+        ]
+    },
+    {
+        "id": "d5df91cb46e115a2",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7445b9246c0c2487",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Plastic Wrap Quantity",
+        "func": "var plasticwrap_qty = global.get('EPlasticwrap')||0;\nvar beforeplasticwrap_qty = global.get('SD_Plasticwrap_Qty') || 0;\nvar plasticwrap_leftqty;\n\nif (beforeplasticwrap_qty < plasticwrap_qty) {\n    plasticwrap_leftqty = 0;\n}\nelse {\n    plasticwrap_leftqty = beforeplasticwrap_qty - plasticwrap_qty;\n}\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + plasticwrap_leftqty +' WHERE `ID` = 10;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1920,
+        "wires": [
+            [
+                "133fc7e5196684a5"
+            ]
+        ]
+    },
+    {
+        "id": "133fc7e5196684a5",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1bf3f086988f667b",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Cleaning Spray Quantity",
+        "func": "var cleaningspray_qty = global.get('ECleaningspray')||0;\nvar beforecleaningspray_qty = global.get('SD_Cleaningspray_Qty') || 0;\nvar cleaningspray_leftqty;\n\nif (beforecleaningspray_qty < cleaningspray_qty) {\n    cleaningspray_leftqty = 0;\n}\nelse {\n    cleaningspray_leftqty = beforecleaningspray_qty - cleaningspray_qty;\n}   \n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + cleaningspray_leftqty +' WHERE `ID` = 11;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1960,
+        "wires": [
+            [
+                "e5161ef9bf785d2a"
+            ]
+        ]
+    },
+    {
+        "id": "e5161ef9bf785d2a",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 1960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0df2b09dc3c3dcf",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Update Hand Sanitizer Quantity",
+        "func": "var handsanitizer_qty = global.get('EHandsanitizer')||0;\nvar beforehandsanitizer_qty = global.get('SD_Handsanitizer_Qty') || 0;\nvar handsanitizer_leftqty;\n\nif (beforehandsanitizer_qty < handsanitizer_qty) {\n    handsanitizer_leftqty = 0;\n}\nelse {\n    handsanitizer_leftqty = beforehandsanitizer_qty - handsanitizer_qty;\n}\n\n\nmsg.topic = 'UPDATE`supermarketrobot`.`itemtype` SET`Quantityleft` = ' + handsanitizer_leftqty +' WHERE `ID` = 12;';\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 2000,
+        "wires": [
+            [
+                "ee597bc9b6870e49"
+            ]
+        ]
+    },
+    {
+        "id": "ee597bc9b6870e49",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 1250,
+        "y": 2000,
+        "wires": [
+            [
+                "19b7ac2fffcf1395"
+            ]
+        ]
+    },
+    {
+        "id": "19b7ac2fffcf1395",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check Leftover Quantity",
+        "func": "msg.topic = \"SELECT * FROM supermarketrobot.itemtype; \";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2140,
+        "wires": [
+            [
+                "cdd529e10d5169bb"
+            ]
+        ]
+    },
+    {
+        "id": "cdd529e10d5169bb",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 690,
+        "y": 2140,
+        "wires": [
+            [
+                "1a13963101d95fcb"
+            ]
+        ]
+    },
+    {
+        "id": "1a13963101d95fcb",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Send Request for Replenishment",
+        "func": "var Leftover_Toothpaste = msg.payload[0].Quantityleft;\nvar Leftover_Shampoo = msg.payload[1].Quantityleft;\nvar Leftover_Soap = msg.payload[2].Quantityleft;\nvar Leftover_Toiletpaper = msg.payload[3].Quantityleft;\nvar Leftover_Laundrydetergent = msg.payload[4].Quantityleft;\nvar Leftover_Dishwashingliquid = msg.payload[5].Quantityleft;\nvar Leftover_Facialtissues = msg.payload[6].Quantityleft;\nvar Leftover_Trashbags = msg.payload[7].Quantityleft;\nvar Leftover_Aluminumfoil = msg.payload[8].Quantityleft;\nvar Leftover_Plasticwrap = msg.payload[9].Quantityleft;\nvar Leftover_Cleaningspray = msg.payload[10].Quantityleft;\nvar Leftover_Handsanitizer = msg.payload[11].Quantityleft;\n\nvar list = '';\n\nif (Leftover_Toothpaste < 4) {\n    list = list + \"\\n\" + \"Toothpaste: \" + Leftover_Toothpaste;\n}\nif (Leftover_Shampoo < 4) {\n    list = list + \"\\n\" + \"Shampoo: \" + Leftover_Shampoo;\n}\nif (Leftover_Soap < 4) {\n    list = list + \"\\n\" + \"Soap: \" + Leftover_Soap;\n}\nif (Leftover_Toiletpaper < 4) {\n    list = list + \"\\n\" + \"Toilet Paper: \" + Leftover_Toiletpaper;\n}\nif (Leftover_Laundrydetergent < 4) {\n    list = list + \"\\n\" + \"Laundry Detergent: \" + Leftover_Laundrydetergent;\n}\nif (Leftover_Dishwashingliquid < 4) {\n    list = list + \"\\n\" + \"Dishwashing Liquid: \" + Leftover_Dishwashingliquid;\n}\nif (Leftover_Facialtissues < 4) {\n    list = list + \"\\n\" + \"Facial Tissues: \" + Leftover_Facialtissues;\n}\nif (Leftover_Trashbags < 4) {\n    list = list + \"\\n\" + \"Trash Bags: \" + Leftover_Trashbags;\n}\nif (Leftover_Aluminumfoil < 4) {\n    list = list + \"\\n\" + \"Aluminum Foil: \" + Leftover_Aluminumfoil;\n}\nif (Leftover_Plasticwrap < 4) {\n    list = list + \"\\n\" + \"Plastic Wrap: \" + Leftover_Plasticwrap;\n}\nif (Leftover_Cleaningspray < 4) {\n    list = list + \"\\n\" + \"Cleaning Spray: \" + Leftover_Cleaningspray;\n}\nif (Leftover_Handsanitizer < 4) {\n    list = list + \"\\n\" + \"Hand Sanitizer: \" + Leftover_Handsanitizer;\n}\n\nmsg.topic = 'Request for Replenishment';\nmsg.payload = \"The below is a list of items to replenish\" + list;\nmsg.to = 'robomarketinnovators@gmail.com';\nmsg.attachments = null;\n\nif (list === '') {\n    \n}\nelse {\n    return msg;\n}\n\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 2140,
+        "wires": [
+            [
+                "ac2dd06aaba59956"
+            ]
+        ]
+    },
+    {
+        "id": "cc1fba2321c597c3",
+        "type": "comment",
+        "z": "e6ad7dddf4e40180",
+        "name": "RFID Enable",
+        "info": "",
+        "x": 490,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "2e2d957d9ef49796",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check RFID Enable",
+        "func": "msg.topic = 'SELECT * FROM `supermarketrobot`.`rfid_enable`;';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 600,
+        "wires": [
+            [
+                "8d1b9df16c12bd69"
+            ]
+        ]
+    },
+    {
+        "id": "8d1b9df16c12bd69",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 780,
+        "y": 600,
+        "wires": [
+            [
+                "96a35942154bac73"
+            ]
+        ]
+    },
+    {
+        "id": "c417bed0bdc3f09f",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 600,
+        "wires": [
+            [
+                "2e2d957d9ef49796"
+            ]
+        ]
+    },
+    {
+        "id": "96a35942154bac73",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Get RFID Enable Action",
+        "func": "//Set Global Variable\nglobal.set('RFIDRead', msg.payload[0].rfid_read);\nglobal.set('RFIDPayment', msg.payload[0].rfid_payment);\n\nvar check1 = global.get('RFIDRead') ||0;\nvar check2 = global.get('RFIDPayment') ||0;\n\nif (check1 == 1 || check2 == 1) {\n    msg.payload = 1;\n    return msg;\n}\nelse {\n    msg.payload = 0;\n    return msg;\n}\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 600,
+        "wires": [
+            [
+                "5d783e7ef1c53e40"
+            ]
+        ]
+    },
+    {
+        "id": "b41fb5e25354dedd",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check Item Info",
+        "func": "var itemid = msg.payload;\n\nmsg.topic = 'SELECT * FROM `supermarketrobot`.`itemtype` WHERE `itemtype`.`ID` = '+itemid+';';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 400,
+        "wires": [
+            [
+                "5d96119d6f34292b"
+            ]
+        ]
+    },
+    {
+        "id": "f3c87925e439c4ea",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check Item Info",
+        "func": "var itemid = msg.payload;\n\nmsg.topic = 'SELECT * FROM `supermarketrobot`.`itemtype` WHERE `itemtype`.`ID` = '+itemid+';';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 840,
+        "wires": [
+            [
+                "94198a164e098683"
+            ]
+        ]
+    },
+    {
+        "id": "61a903a03e15d784",
+        "type": "tcp in",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2020",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 80,
+        "y": 320,
+        "wires": [
+            [
+                "af0b2e6ddb5d6eec"
+            ]
+        ]
+    },
+    {
+        "id": "af0b2e6ddb5d6eec",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Get ItemID in INT",
+        "func": "var StringItem = msg.payload.toString();\n\nvar ItemID = Number(StringItem);\n\nif (ItemID > 0) {\n    msg.payload = ItemID;\n    return msg\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 320,
+        "wires": [
+            [
+                "6cab1859bef6b1c4",
+                "84d56c97bac55f92"
+            ]
+        ]
+    },
+    {
+        "id": "ed9c8ab8f5f5a96f",
+        "type": "tcp in",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2040",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 80,
+        "y": 760,
+        "wires": [
+            [
+                "2c0d6a72cfe840c2"
+            ]
+        ]
+    },
+    {
+        "id": "2c0d6a72cfe840c2",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Get ItemID in INT",
+        "func": "var StringItem = msg.payload.toString();\n\nvar ItemID = Number(StringItem);\n\nif (ItemID > 0) {\n    msg.payload = ItemID;\n    return msg\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 760,
+        "wires": [
+            [
+                "202c42a3997a81e4",
+                "574fd5fc861d97f6"
+            ]
+        ]
+    },
+    {
+        "id": "84d56c97bac55f92",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 104",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "574fd5fc861d97f6",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 105",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "2c80f3d4740f2224",
+        "type": "tcp in",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2060",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "cb1e82292492ebe0"
+            ]
+        ]
+    },
+    {
+        "id": "cb1e82292492ebe0",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Get ItemID in String",
+        "func": "var StringItem = msg.payload.toString();\n\nmsg.payload = StringItem;\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "4d46b53fc0771b93"
+            ]
+        ]
+    },
+    {
+        "id": "4d46b53fc0771b93",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "UpdateCoordinate",
+        "func": "var location = msg.payload;\n\nmsg.topic = 'UPDATE`supermarketrobot`.`callstaff` SET`Location` = \"' + location + '\" WHERE `RobotID` = 1;';\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "86a549317e9aa0ee"
+            ]
+        ]
+    },
+    {
+        "id": "86a549317e9aa0ee",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 790,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cff67ab80204e666",
+        "type": "tcp out",
+        "z": "e6ad7dddf4e40180",
+        "name": "RFID Enable",
+        "host": "localhost",
+        "port": "2100",
+        "beserver": "server",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 1410,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2fcd2839f570d573",
+        "type": "tcp in",
+        "z": "e6ad7dddf4e40180",
+        "name": "RFID Enable",
+        "server": "client",
+        "host": "localhost",
+        "port": "2100",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 1030,
+        "y": 660,
+        "wires": [
+            [
+                "32e32c5092252373"
+            ]
+        ]
+    },
+    {
+        "id": "32e32c5092252373",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 106",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "f9df396aee944975",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 107",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "5fc7799c86eb4395",
+        "type": "tcp in",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2120",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 80,
+        "y": 2820,
+        "wires": [
+            [
+                "fbca57cf271e6a44"
+            ]
+        ]
+    },
+    {
+        "id": "af4f2ac0934845dc",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Get ItemID in INT",
+        "func": "var StringItem = msg.payload.toString();\n\nvar ItemID = Number(StringItem);\n\nif(ItemID == 1) {\n    msg.payload = ItemID;\n    return msg\n}\nelse {\n    \n}\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 2820,
+        "wires": [
+            [
+                "ccf7f1da37d97856",
+                "36a5a109c23c52bd"
+            ]
+        ]
+    },
+    {
+        "id": "07b6b53ad0d52932",
+        "type": "comment",
+        "z": "e6ad7dddf4e40180",
+        "name": "Emergency button",
+        "info": "",
+        "x": 390,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "ae355a4cab3ae235",
+        "type": "mysql",
+        "z": "e6ad7dddf4e40180",
+        "mydb": "266fbbba73e2a57d",
+        "name": "",
+        "x": 880,
+        "y": 2820,
+        "wires": [
+            [
+                "f84a4ebecdc237c7",
+                "b59c0b02a9ee4af3"
+            ]
+        ]
+    },
+    {
+        "id": "ccf7f1da37d97856",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Check Help Info",
+        "func": "msg.topic = \"SELECT * FROM supermarketrobot.callstaff;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 2820,
+        "wires": [
+            [
+                "ae355a4cab3ae235"
+            ]
+        ]
+    },
+    {
+        "id": "f84a4ebecdc237c7",
+        "type": "function",
+        "z": "e6ad7dddf4e40180",
+        "name": "Get Robot Current Location",
+        "func": "//Retrieving the location\nvar robotlocation = msg.payload[0].Location;\n\nmsg.topic = 'Emergency Help';\nmsg.payload = \"Emergency Help Button is pressed.\\nPlease come to \" + robotlocation + \" immediately.\";\nmsg.to = 'robomarketinnovators@gmail.com';\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 2820,
+        "wires": [
+            [
+                "7dbac1cd19e192d5"
+            ]
+        ]
+    },
+    {
+        "id": "b59c0b02a9ee4af3",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 109",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "b29daceb30ae3b20",
+        "type": "inject",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 90,
+        "y": 2900,
+        "wires": [
+            [
+                "af4f2ac0934845dc"
+            ]
+        ]
+    },
+    {
+        "id": "5d783e7ef1c53e40",
+        "type": "rbe",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 1250,
+        "y": 600,
+        "wires": [
+            [
+                "cff67ab80204e666"
+            ]
+        ]
+    },
+    {
+        "id": "730d06a6a2741f23",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 110",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5d5ab2b842ecab8b",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 111",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "fbca57cf271e6a44",
+        "type": "rbe",
+        "z": "e6ad7dddf4e40180",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 230,
+        "y": 2820,
+        "wires": [
+            [
+                "af4f2ac0934845dc"
+            ]
+        ]
+    },
+    {
+        "id": "36a5a109c23c52bd",
+        "type": "debug",
+        "z": "e6ad7dddf4e40180",
+        "name": "debug 125",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "8870acdb15214bdc",
+        "type": "tcp in",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2020",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "cc1826c7257381f5"
+            ]
+        ]
+    },
+    {
+        "id": "f268ed8cf9b4250a",
+        "type": "debug",
+        "z": "1d5ca76ac2e4a103",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9e9feb7d7cd1d8f4",
+        "type": "tcp out",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "host": "localhost",
+        "port": "2020",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 570,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "cadb368d5db3d2be",
+        "type": "inject",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "9e9feb7d7cd1d8f4"
+            ]
+        ]
+    },
+    {
+        "id": "cc1826c7257381f5",
+        "type": "function",
+        "z": "1d5ca76ac2e4a103",
+        "name": "Get ItemID in INT",
+        "func": "var StringItem = msg.payload.toString();\n\nvar ItemID = Number(StringItem);\n\nmsg.payload = ItemID;\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "f268ed8cf9b4250a"
+            ]
+        ]
+    },
+    {
+        "id": "be5d7e78c4489a81",
+        "type": "tcp in",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2040",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 240,
+        "y": 580,
+        "wires": [
+            [
+                "d455bf53a9379755"
+            ]
+        ]
+    },
+    {
+        "id": "4126db9d4c08971c",
+        "type": "debug",
+        "z": "1d5ca76ac2e4a103",
+        "name": "debug 102",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9d57ade7edf414b5",
+        "type": "tcp out",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "host": "localhost",
+        "port": "2040",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 550,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "152259c538b91551",
+        "type": "inject",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 400,
+        "wires": [
+            [
+                "9d57ade7edf414b5"
+            ]
+        ]
+    },
+    {
+        "id": "d455bf53a9379755",
+        "type": "function",
+        "z": "1d5ca76ac2e4a103",
+        "name": "Get ItemID in INT",
+        "func": "var StringItem = msg.payload.toString();\n\nvar ItemID = Number(StringItem);\n\nmsg.payload = ItemID;\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 580,
+        "wires": [
+            [
+                "4126db9d4c08971c"
+            ]
+        ]
+    },
+    {
+        "id": "ad53003f86e69594",
+        "type": "tcp in",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2060",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 220,
+        "y": 900,
+        "wires": [
+            [
+                "84134dab6ec223e6"
+            ]
+        ]
+    },
+    {
+        "id": "3924445cb2666fa1",
+        "type": "debug",
+        "z": "1d5ca76ac2e4a103",
+        "name": "debug 103",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "280fe32224f412cf",
+        "type": "tcp out",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "host": "localhost",
+        "port": "2060",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 530,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "037ae1ed6e2574b4",
+        "type": "inject",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 720,
+        "wires": [
+            [
+                "280fe32224f412cf"
+            ]
+        ]
+    },
+    {
+        "id": "84134dab6ec223e6",
+        "type": "function",
+        "z": "1d5ca76ac2e4a103",
+        "name": "Get ItemID in INT",
+        "func": "var StringItem = msg.payload.toString();\n\nvar ItemID = Number(StringItem);\n\nmsg.payload = ItemID;\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 900,
+        "wires": [
+            [
+                "3924445cb2666fa1"
+            ]
+        ]
+    },
+    {
+        "id": "2ea783ba9ac0bb5a",
+        "type": "tcp in",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2120",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 220,
+        "y": 1200,
+        "wires": [
+            [
+                "9ce5c17f8829e2b4"
+            ]
+        ]
+    },
+    {
+        "id": "ac5ccb4b297594eb",
+        "type": "debug",
+        "z": "1d5ca76ac2e4a103",
+        "name": "debug 108",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "c7fb86689c057234",
+        "type": "tcp out",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "host": "localhost",
+        "port": "2120",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 530,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "b0534eb0ab4a1218",
+        "type": "inject",
+        "z": "1d5ca76ac2e4a103",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 1020,
+        "wires": [
+            [
+                "c7fb86689c057234"
+            ]
+        ]
+    },
+    {
+        "id": "9ce5c17f8829e2b4",
+        "type": "function",
+        "z": "1d5ca76ac2e4a103",
+        "name": "Get ItemID in INT",
+        "func": "var StringItem = msg.payload.toString();\n\nvar ItemID = Number(StringItem);\n\nmsg.payload = ItemID;\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1200,
+        "wires": [
+            [
+                "ac5ccb4b297594eb"
+            ]
+        ]
+    }
+]
