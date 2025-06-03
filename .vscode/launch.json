@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "supermarket_robot_ui (Flutter)",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
